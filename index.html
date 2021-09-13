@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta property="og:image" content="./assets/images/bg-send.png">
+	<meta property="og:image:type" content="image/png">
+	<meta property="og:image:width" content="500">
+	<meta property="og:image:height" content="260">
+	<link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
+	<!-- <link rel="stylesheet" href="./assets/css/main.css">
+	<link rel="stylesheet" href="./assets/css/base.css">
+	<link rel="stylesheet" href="./assets/css/grid.css">
+	<link rel="stylesheet" href="./assets/css/responsive.css"> -->
+	<link rel="stylesheet" href="./assets/sass/app.css">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+	<title>Sweet Bakery</title>
+</head>
+
+<body>
+	<header>
+		<nav>
+			<div class="nav__top">
+				<div class="grid wide">
+					<div class="nav__container">
+						<div class="nav-location">
+							<div class="nav-location__wrap">
+								<i class='bx bx-map'></i>
+								<a href="#">
+									523 Sylvan Ave
+									<br>
+									Mountain View, CA 94041 USA
+								</a>
+							</div>
+
+						</div>
+						<div class="nav-logo">
+							<a href="/" class="nav-logo__link">
+								<img class="nav-logo__img" src="./assets/images/logo.png" alt="Logo">
+							</a>
+						</div>
+						<div class="nav-button">
+							<a href="#" class="btn btn--sm btn--outline btn--zakaria">
+								<i class='bx bx-mail-send'></i>
+								Get in touch
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="nav__main">
+				<div class="grid wide">
+					<div class="nav__container">
+						<div class="nav__mobile">
+							<button class="nav-button__toggle">
+								<span></span>
+							</button>
+							<div class="nav-logo__mobile">
+								<a href="/" class="nav-logo__link">
+									<img class="nav-logo__img" src="./assets/images/logo.png" alt="Logo">
+								</a>
+							</div>
+						</div>
+						<div class="nav-menu">
+							<ul class="nav-menu__list">
+								<li class="nav-menu__item active">
+									<a href="/" class="nav-menu__link">Home</a>
+								</li>
+								<li class="nav-menu__item">
+									<div class="nav-menu__box">
+										<a href="/" class="nav-menu__link">Gallery</a>
+										<i class='bx bx-chevron-down nav-menu__icon'></i>
+									</div>
+									<ul class="nav-dropdown">
+										<li class="nav-dropdown__item">
+											<a href="#">Grid Gallery</a>
+										</li>
+										<li class="nav-dropdown__item">
+											<a href="#">Grid Fullwidth Gallery</a>
+										</li>
+										<li class="nav-dropdown__item">
+											<a href="#">Masonry Gallery</a>
+										</li>
+										<li class="nav-dropdown__item">
+											<a href="#">Masonry Fullwidth Gallery</a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-menu__item">
+									<div class="nav-menu__box">
+										<a href="/" class="nav-menu__link">Shop</a>
+										<i class='bx bx-chevron-down nav-menu__icon'></i>
+									</div>
+									<ul class="nav-dropdown">
+										<li class="nav-dropdown__item">
+											<a href="#">Grid Shop</a>
+										</li>
+										<li class="nav-dropdown__item">
+											<a href="#">Shop list</a>
+										</li>
+										<li class="nav-dropdown__item">
+											<a href="#">Single Product</a>
+										</li>
+										<li class="nav-dropdown__item">
+											<a href="#">Cart page</a>
+										</li>
+										<li class="nav-dropdown__item">
+											<a href="#">Check out</a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-menu__item">
+									<div class="nav-menu__box">
+										<a href="/" class="nav-menu__link">Blog</a>
+										<i class='bx bx-chevron-down nav-menu__icon'></i>
+									</div>
+									<ul class="nav-dropdown">
+										<li class="nav-dropdown__item">
+											<a href="#">Grid Blog</a>
+										</li>
+										<li class="nav-dropdown__item">
+											<a href="#">Blog list</a>
+										</li>
+										<li class="nav-dropdown__item">
+											<a href="#">Blog post</a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-menu__item">
+									<div class="nav-menu__box">
+										<a href="/" class="nav-menu__link">Pages</a>
+										<i class='bx bx-chevron-down nav-menu__icon'></i>
+									</div>
+									<ul class="nav-dropdown">
+										<li class="nav-dropdown__item">
+											<a href="#">What we offer</a>
+										</li>
+										<li class="nav-dropdown__item">
+											<a href="#">Our team</a>
+										</li>
+										<li class="nav-dropdown__item">
+											<a href="#">Testimonials</a>
+										</li>
+										<li class="nav-dropdown__item">
+											<a href="#">Pricing list</a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-menu__item">
+									<div class="nav-menu__box">
+										<a href="/" class="nav-menu__link">Elements</a>
+										<i class='bx bx-chevron-down nav-menu__icon'></i>
+									</div>
+									<ul class="nav-dropdown nav-megamenu">
+										<li class="nav-megamenu__element">
+											<div class="nav-megamenu__title">
+												<i class='bx bxs-grid'></i>
+												<span>Elements</span>
+											</div>
+											<ul class="nav-megamenu__list nav-megamenu__column">
+												<li class="nav-megamenu__item">
+													<a href="#">Typography</a>
+												</li>
+												<li class="nav-megamenu__item">
+													<a href="#">Icon lists</a>
+												</li>
+												<li class="nav-megamenu__item">
+													<a href="#">Progress bars</a>
+												</li>
+												<li class="nav-megamenu__item">
+													<a href="#">Calls to action</a>
+												</li>
+												<li class="nav-megamenu__item">
+													<a href="#">Tabs & accordions</a>
+												</li>
+												<li class="nav-megamenu__item">
+													<a href="#">Buttons</a>
+												</li>
+												<li class="nav-megamenu__item">
+													<a href="#">Tables</a>
+												</li>
+												<li class="nav-megamenu__item">
+													<a href="#">Forms</a>
+												</li>
+												<li class="nav-megamenu__item">
+													<a href="#">Counters</a>
+												</li>
+												<li class="nav-megamenu__item">
+													<a href="#">Grid system</a>
+												</li>
+											</ul>
+										</li>
+										<li class="nav-megamenu__element">
+											<div class="nav-megamenu__title">
+												<i class='bx bxs-layer'></i>
+												<span>Additional page</span>
+											</div>
+											<ul class="nav-megamenu__list">
+												<li class="nav-megamenu__item">
+													<a href="#">404 Page</a>
+												</li>
+												<li class="nav-megamenu__item">
+													<a href="#">Coming Soon</a>
+												</li>
+												<li class="nav-megamenu__item">
+													<a href="#">Privacy Policy</a>
+												</li>
+												<li class="nav-megamenu__item">
+													<a href="#">Search Results</a>
+												</li>
+											</ul>
+										</li>
+										<li class="nav-megamenu__element">
+											<div class="nav-megamenu__title">
+												<i class='bx bxs-cake'></i>
+												<span>Welcome to our story</span>
+											</div>
+											<a href="#" class="nav-megamenu__picture thumbnail--classic">
+												<img src="./assets/images/welcome-to-our-story.jpg" alt="Welcome">
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-menu__item">
+									<a href="/" class="nav-menu__link">Contact us</a>
+								</li>
+							</ul>
+						</div>
+						<div class="nav-boxs">
+							<div class="nav-search">
+								<button class="nav-search__button">
+									<i class='bx bx-search nav-search__search'></i>
+									<i class='bx bx-x-circle nav-search__close'></i>
+								</button>
+								<form>
+									<div class="nav-search__form">
+										<input type="text" placeholder="Search...">
+										<button type="submit" class="nav-search__button">
+											<i class='bx bx-search'></i>
+										</button>
+									</div>
+								</form>
+							</div>
+							<div class="nav-cart">
+
+								<div for="cart-check" class="nav__overlay"></div>
+
+								<button for="cart-check" class="nav-cart__button">
+									<i class='bx bx-shopping-bag'></i>
+									<!-- <sup class="nav-cart__amount">2</sup> -->
+								</button>
+
+								<div class="nav-cart__toggle">
+									<div class="nav-cart__header">
+										<div class="nav-cart__view">
+											<h5 class="nav-cart__title">
+												In cart:
+												<span>2</span>
+												Products
+											</h5>
+											<h6 class="nav-cart__title">
+												Total price:
+												<span>300.000<sup>đ</sup></span>
+											</h6>
+										</div>
+										<button for="cart-check" class="nav-cart__close">
+											<i class='bx bx-x'></i>
+										</button>
+									</div>
+									<div class="scroll--bar nav-cart__body">
+										<div class="nav-cart__item">
+											<a href="#" class="nav-cart__thumbnail">
+												<img src="./assets/images/product-mini-6.png" alt="Product">
+											</a>
+											<div class="nav-cart__product">
+												<div class="nav-cart__heading">
+													<h6 class="nav-cart__name">
+														<a href="#">Milk Chocolate Pudding </a>
+													</h6>
+													<button class="nav-cart__remove">
+														<i class='bx bx-trash-alt'></i>
+													</button>
+												</div>
+												<div class="nav-cart__option">
+													<div class="nav-cart__step">
+														<button class="nav-cart__arrow">
+															<i class='bx bx-minus'></i>
+														</button>
+														<span class="nav-cart__quantity">1</span>
+														<button class="nav-cart__arrow">
+															<i class='bx bx-plus'></i>
+														</button>
+													</div>
+													<div class="nav-cart__prices">
+														<span class="nav-cart__priceold">250.000 <sup>đ</sup></span>
+														<h6 class="nav-cart__price">200.000
+															<sup>đ</sup>
+														</h6>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="nav-cart__item">
+											<a href="#" class="nav-cart__thumbnail">
+												<img src="./assets/images/product-mini-7.png" alt="Product">
+											</a>
+											<div class="nav-cart__product">
+												<div class="nav-cart__heading">
+													<h6 class="nav-cart__name">
+														<a href="#">CHOCOLATE Truffles</a>
+													</h6>
+													<button class="nav-cart__remove">
+														<i class='bx bx-trash-alt'></i>
+													</button>
+												</div>
+												<div class="nav-cart__option">
+													<div class="nav-cart__step">
+														<button class="nav-cart__arrow">
+															<i class='bx bx-minus'></i>
+														</button>
+														<span class="nav-cart__quantity">1</span>
+														<button class="nav-cart__arrow">
+															<i class='bx bx-plus'></i>
+														</button>
+													</div>
+													<div class="nav-cart__prices">
+														<span class="nav-cart__priceold">150.000 <sup>đ</sup></span>
+														<h6 class="nav-cart__price">100.000
+															<sup>đ</sup>
+														</h6>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="nav-cart__footer">
+										<a href="#" class="btn btn--outline btn--md btn--zakaria">Go to cart</a>
+										<a href="#" class="btn btn--primary btn--md btn--zakaria">Checkout</a>
+									</div>
+								</div>
+							</div>
+							<div class="nav-info">
+								<i class='bx bx-dots-vertical-rounded'></i>
+								<div for="info-check" class="nav-info__wrap">
+									<div class="nav-location__wrap">
+										<i class='bx bx-map'></i>
+										<a href="#">
+											523 Sylvan Ave
+											<br>
+											Mountain View, CA 94041 USA
+										</a>
+									</div>
+									<div class="nav-button">
+										<a href="#" class="btn btn--sm btn--outline btn--zakaria">
+											<i class='bx bx-mail-send'></i>
+											Get in touch
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<section class="section--custom1 section__hero">
+			<div class="grid wide">
+				<div class="row">
+					<div class="col l-7 m-5 c-12">
+						<div class="hero__content">
+							<h2 class="hero__title">Delicious</h2>
+							<h3 class="hero__phrase">Cakes for you</h3>
+							<h4 class="hero__sentence">Sweet Bakery offers the best
+								cakes and sweets for you.
+							</h4>
+							<a href="#" class="btn btn--lg btn--shadow btn--primary btn--zakaria">Shop now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section__promo">
+			<div class="grid wide">
+				<article class="promo__content">
+					<div class="promo__title">Only Fresh Cakes</div>
+					<p class="promo__paragraph">
+						All of our products are made from scratch using family recipes with only the highest quality
+						ingredients. We bake and sell fresh daily to ensure only the best products are sold to our
+						customers.
+					</p>
+					<a href="#" class="btn btn--icon btn--primary btn--zakaria">
+						<i class='bx bx-right-arrow-alt'></i>
+					</a>
+				</article>
+			</div>
+		</section>
+		<section class="section--basic section__offer">
+			<div class="grid wide">
+				<h2 class="section--title">What We offer</h2>
+				<div class="offer__cards">
+					<div class="offer__card">
+						<a href="#" class="offer__img">
+							<img src="./assets/images/offer-1.jpg" alt="offer">
+						</a>
+						<div class="offer__content">
+							<div class="offer__top">
+								<h3 class="offer__title">
+									<a href="#">Party Cupcakes</a>
+								</h3>
+								<p class="descriptions offer__descriptions">
+									We provide a variety of cupcakes for any party made with high-quality natural
+									ingredients and no preservatives.
+								</p>
+							</div>
+							<div class="offer__bottom">
+								<a href="#" class="btn--link">Read More</a>
+							</div>
+						</div>
+					</div>
+					<div class="offer__card">
+						<a href="#" class="offer__img">
+							<img src="./assets/images/offer-2.jpg" alt="offer">
+						</a>
+						<div class="offer__content">
+							<div class="offer__top">
+								<h3 class="offer__title">
+									<a href="#">Wedding cakes</a>
+								</h3>
+								<p class="descriptions offer__descriptions">
+									Nothing tastes better than a chocolate cake with a variety of flavors, which is
+									always available at our bakery.
+								</p>
+							</div>
+							<div class="offer__bottom">
+								<a href="#" class="btn--link">Read More</a>
+							</div>
+						</div>
+					</div>
+					<div class="offer__card">
+						<a href="#" class="offer__img">
+							<img src="./assets/images/offer-3.jpg" alt="offer">
+						</a>
+						<div class="offer__content">
+							<div class="offer__top">
+								<h3 class="offer__title">
+									<a href="#">Choco cakes</a>
+								</h3>
+								<p class="descriptions offer__descriptions">
+									Want to make your wedding unforgettable? Then you need to order a unique wedding
+									cake at Sweet Bakery!
+								</p>
+							</div>
+							<div class="offer__bottom">
+								<a href="#" class="btn--link">Read More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section--basic section--bg section__product">
+			<div class="grid wide">
+				<h2 class="section--title">New Products</h2>
+				<span class="product__message">
+					<i class='bx bx-check'></i>
+					Thêm vào giỏ hàng thành công!
+				</span>
+				<div class="products">
+					<div class="product__item">
+						<div class="product__picture">
+							<a href="#" class="product__img">
+								<img src="./assets/images/product-1.png" alt="Product">
+							</a>
+							<span class="product--badge product--badge-sale">Sale</span>
+						</div>
+						<div class="product__content">
+							<div class="product__top">
+								<div class="product__info">
+									<h3 class="product__title">
+										<a href="#">Chocolate Truffles</a>
+									</h3>
+									<p class="descriptions product__descriptions">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, neque. Error
+										quas, minima consectetur id dolore consequuntur maiores quisquam. Officia atque,
+										quos ab ipsum aperiam deleniti quidem harum. Quisquam, sed.
+									</p>
+								</div>
+								<div class="product__pricing-wrap">
+									<span class="product__pricing product__pricing-old">
+										120.000
+										<sup>đ</sup>
+									</span>
+									<span class="product__pricing">
+										100.000
+										<sup>đ</sup>
+									</span>
+								</div>
+							</div>
+							<div class="product__bottom">
+								<div class="product__button">
+									<a href="#" class="btn btn--icon btn--primary-2 btn--zakaria">
+										<i class='bx bx-search'></i>
+									</a>
+								</div>
+								<div class="product__button">
+									<a href="#" class="btn btn--icon btn--primary-2 btn--zakaria">
+										<i class='bx bx-cart'></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product__item">
+						<div class="product__picture">
+							<a href="#" class="product__img">
+								<img src="./assets/images/product-2.png" alt="Product">
+							</a>
+						</div>
+						<div class="product__content">
+							<div class="product__top">
+								<div class="product__info">
+									<h3 class="product__title">
+										<a href="#">Chocolate Pudding</a>
+									</h3>
+									<p class="descriptions product__descriptions">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, neque. Error
+										quas, minima consectetur id dolore consequuntur maiores quisquam. Officia atque,
+										quos ab ipsum aperiam deleniti quidem harum. Quisquam, sed.
+									</p>
+								</div>
+								<div class="product__pricing-wrap">
+									<span class="product__pricing">
+										200.000
+										<sup>đ</sup>
+									</span>
+								</div>
+							</div>
+							<div class="product__bottom">
+								<div class="product__button">
+									<a href="#" class="btn btn--icon btn--primary-2 btn--zakaria">
+										<i class='bx bx-search'></i>
+									</a>
+								</div>
+								<div class="product__button">
+									<a href="#" class="btn btn--icon btn--primary-2 btn--zakaria">
+										<i class='bx bx-cart'></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product__item">
+						<div class="product__picture">
+							<a href="#" class="product__img">
+								<img src="./assets/images/product-3.png" alt="Product">
+							</a>
+							<span class="product--badge product--badge-new">New</span>
+						</div>
+						<div class="product__content">
+							<div class="product__top">
+								<div class="product__info">
+									<h3 class="product__title">
+										<a href="#">Dark Chocolate Cake</a>
+									</h3>
+									<p class="descriptions product__descriptions">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, neque. Error
+										quas, minima consectetur id dolore consequuntur maiores quisquam. Officia atque,
+										quos ab ipsum aperiam deleniti quidem harum. Quisquam, sed.
+									</p>
+								</div>
+								<div class="product__pricing-wrap">
+									<span class="product__pricing">
+										100.000
+										<sup>đ</sup>
+									</span>
+								</div>
+							</div>
+							<div class="product__bottom">
+								<div class="product__button">
+									<a href="#" class="btn btn--icon btn--primary-2 btn--zakaria">
+										<i class='bx bx-search'></i>
+									</a>
+								</div>
+								<div class="product__button">
+									<a href="#" class="btn btn--icon btn--primary-2 btn--zakaria">
+										<i class='bx bx-cart'></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product__item">
+						<div class="product__picture">
+							<a href="#" class="product__img">
+								<img src="./assets/images/product-4.png" alt="Product">
+							</a>
+						</div>
+						<div class="product__content">
+							<div class="product__top">
+								<div class="product__info">
+									<h3 class="product__title">
+										<a href="#">Chocolate Cookie</a>
+									</h3>
+									<p class="descriptions product__descriptions">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, neque. Error
+										quas, minima consectetur id dolore consequuntur maiores quisquam. Officia atque,
+										quos ab ipsum aperiam deleniti quidem harum. Quisquam, sed.
+									</p>
+								</div>
+								<div class="product__pricing-wrap">
+									<span class="product__pricing">
+										100.000
+										<sup>đ</sup>
+									</span>
+								</div>
+							</div>
+							<div class="product__bottom">
+								<div class="product__button">
+									<a href="#" class="btn btn--icon btn--primary-2 btn--zakaria">
+										<i class='bx bx-search'></i>
+									</a>
+								</div>
+								<div class="product__button">
+									<a href="#" class="btn btn--icon btn--primary-2 btn--zakaria">
+										<i class='bx bx-cart'></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product__item">
+						<div class="product__picture">
+							<a href="#" class="product__img">
+								<img src="./assets/images/product-4.png" alt="Product">
+							</a>
+						</div>
+						<div class="product__content">
+							<div class="product__top">
+								<div class="product__info">
+									<h3 class="product__title">
+										<a href="#">Chocolate Cookies</a>
+									</h3>
+									<p class="descriptions product__descriptions">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, neque. Error
+										quas, minima consectetur id dolore consequuntur maiores quisquam. Officia atque,
+										quos ab ipsum aperiam deleniti quidem harum. Quisquam, sed.
+									</p>
+								</div>
+								<div class="product__pricing-wrap">
+									<span class="product__pricing">
+										100.000
+										<sup>đ</sup>
+									</span>
+								</div>
+							</div>
+							<div class="product__bottom">
+								<div class="product__button">
+									<a href="#" class="btn btn--icon btn--primary-2 btn--zakaria">
+										<i class='bx bx-search'></i>
+									</a>
+								</div>
+								<div class="product__button">
+									<a href="#" class="btn btn--icon btn--primary-2 btn--zakaria">
+										<i class='bx bx-cart'></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product__item">
+						<div class="product__picture">
+							<a href="#" class="product__img">
+								<img src="./assets/images/product-3.png" alt="Product">
+							</a>
+							<span class="product--badge product--badge-new">New</span>
+						</div>
+						<div class="product__content">
+							<div class="product__top">
+								<div class="product__info">
+									<h3 class="product__title">
+										<a href="#">Dark Chocolate Cake</a>
+									</h3>
+									<p class="descriptions product__descriptions">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, neque. Error
+										quas, minima consectetur id dolore consequuntur maiores quisquam. Officia atque,
+										quos ab ipsum aperiam deleniti quidem harum. Quisquam, sed.
+									</p>
+								</div>
+								<div class="product__pricing-wrap">
+									<span class="product__pricing">
+										100.000
+										<sup>đ</sup>
+									</span>
+								</div>
+							</div>
+							<div class="product__bottom">
+								<div class="product__button">
+									<a href="#" class="btn btn--icon btn--primary-2 btn--zakaria">
+										<i class='bx bx-search'></i>
+									</a>
+								</div>
+								<div class="product__button">
+									<a href="#" class="btn btn--icon btn--primary-2 btn--zakaria">
+										<i class='bx bx-cart'></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product__item">
+						<div class="product__picture">
+							<a href="#" class="product__img">
+								<img src="./assets/images/product-1.png" alt="Product">
+							</a>
+							<span class="product--badge product--badge-sale">Sale</span>
+						</div>
+						<div class="product__content">
+							<div class="product__top">
+								<div class="product__info">
+									<h3 class="product__title">
+										<a href="#">Chocolate Trufftles</a>
+									</h3>
+									<p class="descriptions product__descriptions">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, neque. Error
+										quas, minima consectetur id dolore consequuntur maiores quisquam. Officia atque,
+										quos ab ipsum aperiam deleniti quidem harum. Quisquam, sed.
+									</p>
+								</div>
+								<div class="product__pricing-wrap">
+									<span class="product__pricing product__pricing-old">
+										120.000
+										<sup>đ</sup>
+									</span>
+									<span class="product__pricing">
+										100.000
+										<sup>đ</sup>
+									</span>
+								</div>
+							</div>
+							<div class="product__bottom">
+								<div class="product__button">
+									<a href="#" class="btn btn--icon btn--primary-2 btn--zakaria">
+										<i class='bx bx-search'></i>
+									</a>
+								</div>
+								<div class="product__button">
+									<a href="#" class="btn btn--icon btn--primary-2 btn--zakaria">
+										<i class='bx bx-cart'></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="product__item">
+						<div class="product__picture">
+							<a href="#" class="product__img">
+								<img src="./assets/images/product-2.png" alt="Product">
+							</a>
+						</div>
+						<div class="product__content">
+							<div class="product__top">
+								<div class="product__info">
+									<h3 class="product__title">
+										<a href="#">Chocolate Pudding</a>
+									</h3>
+									<p class="descriptions product__descriptions">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, neque. Error
+										quas, minima consectetur id dolore consequuntur maiores quisquam. Officia atque,
+										quos ab ipsum aperiam deleniti quidem harum. Quisquam, sed.
+									</p>
+								</div>
+								<div class="product__pricing-wrap">
+									<span class="product__pricing">
+										200.000
+										<sup>đ</sup>
+									</span>
+								</div>
+							</div>
+							<div class="product__bottom">
+								<div class="product__button">
+									<a href="#" class="btn btn--icon btn--primary-2 btn--zakaria">
+										<i class='bx bx-search'></i>
+									</a>
+								</div>
+								<div class="product__button">
+									<a href="#" class="btn btn--icon btn--primary-2 btn--zakaria">
+										<i class='bx bx-cart'></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="products__button">
+					<a href="#" class="btn btn--lg btn--shadow btn--primary btn--zakaria">View All</a>
+				</div>
+			</div>
+		</section>
+
+		<section class="section--basic section__chooseus">
+			<div class="grid wide">
+				<h2 class="section--title">Why choose us</h2>
+				<div class="row">
+					<div class="col xl-4 m-4 s-6 c-10">
+						<article class="chooseus chooseus__left">
+							<div class="chooseus__wrap">
+								<div class="chooseus__content">
+									<h4 class="chooseus__title">
+										<a href="#">Quality Products</a>
+									</h4>
+									<p class="descriptions chooseus__descriptions">
+										We guarantee the quality of all the cakes we provide as they are baked using the
+										freshest ingredients.
+									</p>
+								</div>
+								<div class="chooseus__icons">
+									<i class='bx bx-cookie'></i>
+									<svg class="chooseus__svg chooseus__svg-right" width="77.06" height="71.94"
+										viewBox="0 0 77.06 71.94">
+										<path
+											d="M1220.63,3358.07c8.86-19.66,32.66-7.87,38.1,13a39.053,39.053,0,0,1-27.91,47.63c-20.85,5.44-43.52-6.76-47.59-27.93C1179.83,3373.1,1210.55,3380.43,1220.63,3358.07Z"
+											transform="translate(-1182.94 -3348.03)"></path>
+									</svg>
+								</div>
+							</div>
+						</article>
+						<article class="chooseus chooseus__left">
+							<div class="chooseus__wrap">
+								<div class="chooseus__content">
+									<h4 class="chooseus__title">
+										<a href="#">Free Delivery</a>
+									</h4>
+									<p class="descriptions chooseus__descriptions">
+										We guarantee the quality of all the cakes we provide as they are baked using the
+										freshest ingredients.
+									</p>
+								</div>
+								<div class="chooseus__icons">
+									<i class='bx bxs-truck'></i>
+									<svg class="chooseus__svg chooseus__svg-right" width="77.06" height="71.94"
+										viewBox="0 0 77.06 71.94">
+										<path
+											d="M1220.63,3358.07c8.86-19.66,32.66-7.87,38.1,13a39.053,39.053,0,0,1-27.91,47.63c-20.85,5.44-43.52-6.76-47.59-27.93C1179.83,3373.1,1210.55,3380.43,1220.63,3358.07Z"
+											transform="translate(-1182.94 -3348.03)"></path>
+									</svg>
+								</div>
+							</div>
+						</article>
+					</div>
+					<div class="col xl-4 m-4 c-0">
+						<div class="chooseus__img">
+							<img src="./assets/images/why-choose-us.jpg" alt="Choose US">
+						</div>
+					</div>
+					<div class="col xl-4 m-4 s-6 c-10">
+						<article class="chooseus chooseus__right">
+							<div class="chooseus__wrap">
+								<div class="chooseus__icons">
+									<i class='bx bxs-spa'></i>
+									<svg class="chooseus__svg chooseus__svg-left" width="77.06" height="71.94"
+										viewBox="0 0 77.06 71.94">
+										<path
+											d="M1220.63,3358.07c8.86-19.66,32.66-7.87,38.1,13a39.053,39.053,0,0,1-27.91,47.63c-20.85,5.44-43.52-6.76-47.59-27.93C1179.83,3373.1,1210.55,3380.43,1220.63,3358.07Z"
+											transform="translate(-1182.94 -3348.03)"></path>
+									</svg>
+								</div>
+								<div class="chooseus__content">
+									<h4 class="chooseus__title">
+										<a href="#">Catering service</a>
+									</h4>
+									<p class="descriptions chooseus__descriptions">
+										Our bakery also provides an outstanding catering service for events and special
+										occasions.
+									</p>
+								</div>
+							</div>
+						</article>
+						<article class="chooseus chooseus__right">
+							<div class="chooseus__wrap">
+								<div class="chooseus__icons">
+									<i class='bx bx-credit-card-front'></i>
+									<svg class="chooseus__svg chooseus__svg-left" width="77.06" height="71.94"
+										viewBox="0 0 77.06 71.94">
+										<path
+											d="M1220.63,3358.07c8.86-19.66,32.66-7.87,38.1,13a39.053,39.053,0,0,1-27.91,47.63c-20.85,5.44-43.52-6.76-47.59-27.93C1179.83,3373.1,1210.55,3380.43,1220.63,3358.07Z"
+											transform="translate(-1182.94 -3348.03)"></path>
+									</svg>
+								</div>
+								<div class="chooseus__content">
+									<h4 class="chooseus__title">
+										<a href="#">Online Payment</a>
+									</h4>
+									<p class="descriptions chooseus__descriptions">
+										We accept all kinds of online payments including Visa, MasterCard, American
+										Express credit cards.
+									</p>
+								</div>
+							</div>
+						</article>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section--basic section__sale">
+			<div class="grid wide">
+				<div class="row">
+					<div class="col xl-5 l-6 m-9">
+						<div class="sale__content">
+							<h2 class="sale__title">
+								Summer sale
+							</h2>
+							<div class="sale__discount">
+								<span class="sale__percent">-20%</span>
+								<span class="sale__type">On all cakes</span>
+							</div>
+							<p class="descriptions sale__descriptions">
+								Purchase our tasty cakes and sweets for your next event or family dinner at our online
+								shop
+								and save more money than anywhere.
+							</p>
+							<a href="#" class="btn btn--lg btn--primary btn--zakaria btn--shadow">Shop now</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section--basic section__about">
+			<div class="grid wide">
+				<h2 class="section--title">About US</h2>
+				<div class="row">
+					<div class="col l-6 m-12">
+						<img class="about__img" src="./assets/images/about.jpg" alt="About">
+					</div>
+					<div class="col l-6 m-12">
+						<div class="about__tab">
+							<div class="about__content">
+								<div class="about__pane active">
+									<h4 class="about__title">
+										<a href="#">Providing quality baked goods for all customers</a>
+									</h4>
+									<p class="descriptions about__descriptions">
+										Our mission is to create a bakery that makes the best quality baked goods on
+										site from scratch, and where both employees and customers would feel
+										comfortable.
+									</p>
+									<div class="about__button">
+										<a href="#" class="btn--link">Read more</a>
+									</div>
+								</div>
+								<div class="about__pane">
+									<h4 class="about__title">
+										<a href="#">Ensuring the Best Atmosphere for Everyone</a>
+									</h4>
+									<p class="descriptions about__descriptions">
+										We see the most important part of our business in ensuring the happiness of our
+										staff and the satisfaction of our clients by creating a welcoming and caring
+										atmosphere.
+									</p>
+									<div class="about__button">
+										<a href="#" class="btn--link">Read more</a>
+									</div>
+								</div>
+								<div class="about__pane">
+									<h4 class="about__title">
+										<a href="#">Serving only the freshest baked goods for you</a>
+									</h4>
+									<p class="descriptions about__descriptions">
+										We aim to deliver the best baked goods for corporate events and individual
+										celebrations, while also offering the best level of customer service in the
+										United States.
+									</p>
+									<div class="about__button">
+										<a href="#" class="btn--link">Read more</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="about__nav">
+								<ul class="about__list">
+									<li class="about__item active">Our Mission</li>
+									<li class="about__item">Our Values</li>
+									<li class="about__item">Our Goals</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section--basic section--bg section__team">
+			<div class="grid wide">
+				<h2 class="section--title">Our Team</h2>
+				<div class="team__cards">
+					<article class="team__card">
+						<div class="team__thumbnail">
+							<a href="#" class="team__img">
+								<img src="./assets/images/team-1.jpg" alt="Team">
+							</a>
+							<div class="team__arrow"></div>
+						</div>
+						<div class="team__content">
+							<div class="team__top">
+								<h4 class="team__title">
+									<a href="#">Richard Smith </a>
+								</h4>
+								<p class="descriptions team__descriptions">
+									Richard has a true passion for baking and that’s why he has been our founder and
+									head baker since day one.
+								</p>
+							</div>
+							<div class="team__bottom">
+								<a href="#" class="team__social">
+									<i class='bx bxl-facebook'></i>
+								</a>
+								<a href="#" class="team__social">
+									<i class='bx bxl-instagram'></i>
+								</a>
+								<a href="#" class="team__social">
+									<i class='bx bxl-twitter'></i>
+								</a>
+								<a href="#" class="team__social">
+									<i class='bx bxl-google-plus'></i>
+								</a>
+							</div>
+						</div>
+					</article>
+					<article class="team__card">
+						<div class="team__thumbnail">
+							<a href="#" class="team__img">
+								<img src="./assets/images/team-2.jpg" alt="Team">
+							</a>
+							<div class="team__arrow"></div>
+						</div>
+						<div class="team__content">
+							<div class="team__top">
+								<h4 class="team__title">
+									<a href="#">Susan Anderson</a>
+								</h4>
+								<p class="descriptions team__descriptions">
+									Susan spends most of her time baking and cake decorating as well as heading up the
+									bakery's marketing initiatives.
+								</p>
+							</div>
+							<div class="team__bottom">
+								<a href="#" class="team__social">
+									<i class='bx bxl-facebook'></i>
+								</a>
+								<a href="#" class="team__social">
+									<i class='bx bxl-instagram'></i>
+								</a>
+								<a href="#" class="team__social">
+									<i class='bx bxl-twitter'></i>
+								</a>
+								<a href="#" class="team__social">
+									<i class='bx bxl-google-plus'></i>
+								</a>
+							</div>
+						</div>
+					</article>
+					<article class="team__card">
+						<div class="team__thumbnail">
+							<a href="#" class="team__img">
+								<img src="./assets/images/team-3.jpg" alt="Team">
+							</a>
+							<div class="team__arrow"></div>
+						</div>
+						<div class="team__content">
+							<div class="team__top">
+								<h4 class="team__title">
+									<a href="#">Steve Ruffalo</a>
+								</h4>
+								<p class="descriptions team__descriptions">
+									Steve is our lead cake designer. He has designed beautiful cakes for various
+									occasions including weddings, parties, showers, anniversaries and more.
+								</p>
+							</div>
+							<div class="team__bottom">
+								<a href="#" class="team__social">
+									<i class='bx bxl-facebook'></i>
+								</a>
+								<a href="#" class="team__social">
+									<i class='bx bxl-instagram'></i>
+								</a>
+								<a href="#" class="team__social">
+									<i class='bx bxl-twitter'></i>
+								</a>
+								<a href="#" class="team__social">
+									<i class='bx bxl-google-plus'></i>
+								</a>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+
+		<section class="section--basic section__cta">
+			<div class="grid wide">
+				<div class="row">
+					<div class="col xl-7 l-12 m-10">
+						<div class="cta__content">
+							<h3 class="cta__sologan">Unique Flavors and
+								Fresh Ingredients</h3>
+							<h2 class="cta__title">All
+								Kinds of Cakes</h2>
+							<a href="#" class="btn btn--primary btn--lg btn--zakaria">Read more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section--basic section__feedback">
+			<div class="grid wide">
+				<h2 class="section--title">Feedback</h2>
+				<div class="feedback__clients">
+					<article class="feedback__client">
+						<div class="feedback__top">
+							<blockquote>
+								Thank you so much for the elegant cupcakes. They looked and tasted amazing. I’m
+								recommending you to all my friends.
+							</blockquote>
+						</div>
+						<div class="feedback__bottom">
+							<div class="feedback__img">
+								<img src="./assets/images/user-10.jpg" alt="Client">
+							</div>
+							<div class="feedback__resume">
+								<h6 class="feedback__author">Patrick Goodman</h6>
+								<i class="feedback__role">Client</i>
+							</div>
+						</div>
+					</article>
+					<article class="feedback__client">
+						<div class="feedback__top">
+							<blockquote>
+								Just a note to let you know how fabulous your wedding cake was. Many guests
+								commented on
+								how delicious it tasted.
+							</blockquote>
+						</div>
+						<div class="feedback__bottom">
+							<div class="feedback__img">
+								<img src="./assets/images/user-11.jpg" alt="Client">
+							</div>
+							<div class="feedback__resume">
+								<h6 class="feedback__author">Jane Smith</h6>
+								<i class="feedback__role">Client</i>
+							</div>
+						</div>
+					</article>
+					<article class="feedback__client">
+						<div class="feedback__top">
+							<blockquote>
+								Thank you so much for the elegant cupcakes. They looked and tasted amazing. I’m
+								recommending you to all my friends.
+							</blockquote>
+						</div>
+						<div class="feedback__bottom">
+							<div class="feedback__img">
+								<img src="./assets/images/user-5.jpg" alt="Client">
+							</div>
+							<div class="feedback__resume">
+								<h6 class="feedback__author">Patrick Goodman</h6>
+								<i class="feedback__role">Client</i>
+							</div>
+						</div>
+					</article>
+					<article class="feedback__client">
+						<div class="feedback__top">
+							<blockquote>
+								Just a note to let you know how fabulous your wedding cake was. Many guests
+								commented on
+								how delicious it tasted.
+							</blockquote>
+						</div>
+						<div class="feedback__bottom">
+							<div class="feedback__img">
+								<img src="./assets/images/user-6.jpg" alt="Client">
+							</div>
+							<div class="feedback__resume">
+								<h6 class="feedback__author">Jane Smith</h6>
+								<i class="feedback__role">Client</i>
+							</div>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+		<section class="section--basic section--bg">
+			<div class="grid wide">
+				<h2 class="section--title">Latest News</h2>
+				<div class="row">
+					<div class="col m-6">
+						<article class="post post-large">
+							<a href="#" class="post-large__img img--zoom">
+								<img src="./assets/images/post-1.jpg" alt="post">
+							</a>
+							<div class="post-large__content">
+								<time class="post__time">August 9, 2021</time>
+								<h4 class="post__title">
+									<a href="#">How to Pipe a Fluffy Frosting Border on a Cake</a>
+								</h4>
+							</div>
+						</article>
+					</div>
+					<div class="col m-6">
+						<div class="post__wrap">
+							<article class="post post-small">
+								<a href="#" class="post-small__img img--zoom">
+									<img src="./assets/images/post-2.jpg" alt="post">
+								</a>
+								<div class="post-small__content">
+									<time class="post__time">August 9, 2021</time>
+									<h4 class="post__title">
+										<a href="#">Recipe of the Day: Pumpkin Spice Latte Cake</a>
+									</h4>
+								</div>
+							</article>
+							<article class="post post-small">
+								<a href="#" class="post-small__img img--zoom">
+									<img src="./assets/images/post-3.jpg" alt="post">
+								</a>
+								<div class="post-small__content">
+									<time class="post__time">August 9, 2021</time>
+									<h4 class="post__title">
+										<a href="#">Recipe of the Day: Pumpkin Spice Latte Cake</a>
+									</h4>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section--custom2 section__partner">
+			<div class="grid wide">
+				<div class="partner__list">
+					<div class="partner__item">
+						<a href="#" class="partner__img">
+							<img src="./assets/images/partner-1.png" alt="Partner">
+						</a>
+					</div>
+					<div class="partner__item">
+						<a href="#" class="partner__img">
+							<img src="./assets/images/partner-2.png" alt="Partner">
+						</a>
+					</div>
+					<div class="partner__item">
+						<a href="#" class="partner__img">
+							<img src="./assets/images/partner-3.png" alt="Partner">
+						</a>
+					</div>
+					<div class="partner__item">
+						<a href="#" class="partner__img">
+							<img src="./assets/images/partner-4.png" alt="Partner">
+						</a>
+					</div>
+					<div class="partner__item">
+						<a href="#" class="partner__img">
+							<img src="./assets/images/partner-5.png" alt="Partner">
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer>
+		<section class="section--custom2">
+			<div class="grid wide">
+				<div class="row">
+					<div class="col xl-4 l-3 m-10 s-12">
+						<div class="footer footer__gallery">
+							<h5 class="footer__title">Gallery</h5>
+							<div class="row">
+								<div class="col l-4 m-2 s-2 c-4">
+									<div class="footer__box">
+										<a href="#" class="footer__img thumbnail--classic">
+											<img src="./assets/images/grid-gallery-1-original.jpg" alt="Image Gallery">
+										</a>
+									</div>
+								</div>
+								<div class="col l-4 m-2 s-2 c-4">
+									<div class="footer__box">
+										<a href="#" class="footer__img thumbnail--classic">
+											<img src="./assets/images/grid-gallery-2-original.jpg" alt="Image Gallery">
+										</a>
+									</div>
+								</div>
+								<div class="col l-4 m-2 s-2 c-4">
+									<div class="footer__box">
+										<a href="#" class="footer__img thumbnail--classic">
+											<img src="./assets/images/grid-gallery-3-original.jpg" alt="Image Gallery">
+										</a>
+									</div>
+								</div>
+								<div class="col l-4 m-2 s-2 c-4">
+									<div class="footer__box">
+										<a href="#" class="footer__img thumbnail--classic">
+											<img src="./assets/images/grid-gallery-4-original.jpg" alt="Image Gallery">
+										</a>
+									</div>
+								</div>
+								<div class="col l-4 m-2 s-2 c-4">
+									<div class="footer__box">
+										<a href="#" class="footer__img thumbnail--classic">
+											<img src="./assets/images/grid-gallery-5-original.jpg" alt="Image Gallery">
+										</a>
+									</div>
+								</div>
+								<div class="col l-4 m-2 s-2 c-4">
+									<div class="footer__box">
+										<a href="#" class="footer__img thumbnail--classic">
+											<img src="./assets/images/grid-gallery-6-original.jpg" alt="Image Gallery">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col xl-5 l-5 m-7 s-5 c-12">
+						<div class="footer footer__links">
+							<h5 class="footer__title">Quick Links</h5>
+							<ul class="footer__list">
+								<li class="footer__item">
+									<a href="#">About Us</a>
+								</li>
+								<li class="footer__item">
+									<a href="#">Our Team</a>
+								</li>
+								<li class="footer__item">
+									<a href="#">Shop</a>
+								</li>
+								<li class="footer__item">
+									<a href="#">Pricing</a>
+								</li>
+								<li class="footer__item">
+									<a href="#">FAQ</a>
+								</li>
+								<li class="footer__item">
+									<a href="#">Contact Us</a>
+								</li>
+								<li class="footer__item">
+									<a href="#">What We Offer</a>
+								</li>
+								<li class="footer__item">
+									<a href="#">Our Blog</a>
+								</li>
+								<li class="footer__item">
+									<a href="#">Testimonials</a>
+								</li>
+								<li class="footer__item">
+									<a href="#">Baking School</a>
+								</li>
+								<li class="footer__item">
+									<a href="#">Our Recipes</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col xl-3 l-4 m-5 s-7 c-12">
+						<div class="footer footer__contact">
+							<h5 class="footer__title">Get In Touch</h5>
+							<div class="footer__address">
+								<div class="footer__map">
+									<i class='bx bxs-map'></i>
+									<a href="#">523 Sylvan Ave, 5th Floor Mountain View, CA 94041 USA</a>
+								</div>
+								<div class="footer__phone">
+									<i class='bx bxs-phone'></i>
+									<a href="#">+(84)123 456 789</a>
+								</div>
+								<div class="footer__mail">
+									<i class='bx bx-mail-send'></i>
+									<a href="#">hieucot69@gmail.com</a>
+								</div>
+							</div>
+							<div class="footer__socials">
+								<a href="https://www.facebook.com/trunghieupia/">
+									<i class='bx bxl-facebook'></i>
+								</a>
+								<a href="https://www.instagram.com/trunghieupia/">
+									<i class='bx bxl-instagram'></i>
+								</a>
+								<a href="https://twitter.com/trunghieupia/">
+									<i class='bx bxl-twitter'></i>
+								</a>
+								<a href="https://www.linkedin.com/in/trung-hieu/">
+									<i class='bx bxl-linkedin'></i>
+								</a>
+								<a href="https://github.com/hieucot">
+									<i class='bx bxl-github'></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="section__copyright">
+			<div class="grid wide">
+				<p>&copy 2021. Sweet Bakery All Rights Reserved</p>
+			</div>
+		</section>
+	</footer>
+
+	<script src="./assets/js/main.js"></script>
+</body>
+
+</html>
