@@ -1,5 +1,4 @@
 @import "./../mixin";
-
 /*=== Header ===*/
 .nav {
 	&__top {
@@ -440,7 +439,7 @@
 		}
 		&__message {
 			position: relative;
-			color: var(--success-color);
+			color: $success-color;
 			display: flex;
 			flex-basis: 100%;
 			line-height: 2;
@@ -597,7 +596,6 @@
 		}
 	}
 	@include maxw(1199.98px) {
-		/*=== Header ===*/
 		&__top,
 		&__main {
 			.grid.wide {
@@ -606,7 +604,6 @@
 		}
 	}
 	@include maxw(991.98px) {
-		/*=== Header ===*/
 		&__top {
 			display: none;
 		}
